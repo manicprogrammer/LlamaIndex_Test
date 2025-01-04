@@ -16,7 +16,7 @@ with open(f"../../sample_docs/{file_name}", "rb") as file_to_parse:
     # must provide extra_info with file_name key when passing file object
     documents = parser.load_data(file_to_parse, extra_info=extra_info)
     # to manually check the output uncomment the below
-    # print(documents)
+    # print(documents[0].text)
 
 # index the parsed documents
 index = VectorStoreIndex.from_documents(documents)
