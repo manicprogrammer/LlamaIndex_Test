@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# set LlamaParse for markdown output and auto_mode only parsing page 0
+# set LlamaParse for markdown output and auto_mode only parsing page 8
 parser = LlamaParse(
     result_type="markdown", 
     auto_mode=True,
