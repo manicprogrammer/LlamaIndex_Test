@@ -1,3 +1,5 @@
+# pip install llama-index-embeddings-openai llama-index-llms-openai
+# pip install llama-index-core llama-parse llama-index-readers-file
 
 import os
 from llama_parse import LlamaParse
@@ -7,6 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# LlamaParse will default to accurate_mode=True
 parser = LlamaParse(result_type="markdown", verbose=True)
 
 file_name = "ssi-page-5.pdf"
